@@ -15,7 +15,19 @@ data_action = [
         ]
     },
     {
-        title: "Grapple",
+        title: "Unarmed Attack",
+        icon: "fist",
+        subtitle: "Normal unarmed attack",
+        description: "Attempt to grab a creature or wrestle with it",
+        reference: "PHB, pg. 377.",
+        bullets: [
+            "You can use the <i>Attack</i> action to make a special unarmed attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
+            "The target of your grapple must be no more than one size larger than you, and you have to have a hand free to grab the target.",
+            "The target must succeed on a Strength or Dexterity saving throw (it chooses which), or it has the <i>Grappled</i> condition. The DC for the saving throw and any escape attempts is 8 + STR Modifier + Proficiency Bonus of the attacker."
+        ]
+    },
+    {
+        title: "Unarmed Attack (Grapple)",
         icon: "grab",
         subtitle: "Special unarmed attack",
         description: "Attempt to grab a creature or wrestle with it",
@@ -27,7 +39,7 @@ data_action = [
         ]
     },
     {
-        title: "Shove",
+        title: "Unarmed Attack (Shove)",
         icon: "hand",
         subtitle: "Special unarmed attack",
         description: "Shove a creature, either to knock it prone or push it away from you",
@@ -39,10 +51,10 @@ data_action = [
         ]
     },
     {
-        title: "Cast a spell",
+        title: "Magic",
         icon: "magic-swirl",
-        subtitle: "Cast time of 1 action",
-        description: "Cast a spell with a casting time of 1 action",
+        subtitle: "Cast a spell, use a magic item",
+        description: "Cast a spell, use a magical feature or magic item of 1 action.",
         reference: "PHB, pg. 235-238, 363.",
         bullets: [
             "On a turn, you can expend only one spell slot to cast a spell. You can't, for example, cast a spell with a spell slot as your action and another one using your bonus action on the same turn.",
@@ -82,12 +94,13 @@ data_action = [
         ]
     },
     {
-        title: "Escape",
+        title: "Ending a Grapple",
         icon: "manacles",
         subtitle: "Escape a grapple",
         description: "Escape a grapple",
         reference: "PHB, pg. 367.",
         bullets: [
+            "A Grappled creature can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check against the grapple’s escape DC, ending the condition on itself on a success. The condition also ends if the grappler has the Incapacitated condition or if the distance between the Grappled target and the grappler exceeds the grapple’s range. In addition, the grappler can release the target at any time (no action required).",
             "To escape a grapple, you must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check against the grapple's escape DC.",
             "Escaping other conditions that restrain you (such as manacles) may require a Dexterity or Strength check, as specified by the condition."
         ]
@@ -174,6 +187,17 @@ data_action = [
         ]
     },
     {
+        title: "Study (Identify an spell)",
+        icon: "magnifying-glass",
+        subtitle: "Identify a non-instantaneous spell.",
+        description: "Take the study action to identify a non-instantaneous spell.",
+        // TODO: Add proper page number
+        reference: "PHB, pg. XXX.",
+        bullets: [
+            "You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check."
+        ]
+    },
+    {
         title: "Ready",
         icon: "stopwatch",
         subtitle: "Wait for a particular circumstance.",
@@ -198,7 +222,7 @@ data_action = [
         ]
     },
     {
-        title: "Stabilize a creature",
+        title: "Help (First aid)",
         icon: "first-aid",
         subtitle: "Stabilize a dying creature.",
         description: "Stop a dying creature from needing to make death saving throws",

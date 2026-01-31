@@ -55,7 +55,8 @@ data_movement = [
         bullets: [
             "You can drop prone without using any of your speed.",
             "To move while prone, you must crawl or use magic such as teleportation",
-            "Dropping prone adds the <i>Prone</i> condition."
+            "Dropping prone adds the <i>Prone</i> condition.",
+            "When you give yourself prone condition, you can automatically remove <b>Burning</b> Hazard."
         ]
     },
     {
