@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARCANEO — Character Sheets Index</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Lora:700' rel='stylesheet' type='text/css'>
+    <style>
+        :root {
+            --bg: #0d0f12;
+            --panel: #161a22;
+            --panel-2: #1c2130;
+            --line: #2a3245;
+            --line-soft: #3a4258;
+            --gold: #c9a950;
+            --gold-soft: #8b7a45;
+            --text: #d4d8e0;
+            --muted: #7a8296;
+            --accent: #7a4456;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background:
+                radial-gradient(ellipse at 20% 0%, rgba(100, 40, 60, 0.25) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 100%, rgba(30, 50, 90, 0.2) 0%, transparent 60%),
+                linear-gradient(180deg, #0a0d13 0%, #11151d 100%);
+            color: var(--text);
+            font-family: 'Noto Sans', sans-serif;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: Lora, serif;
+            font-variant: small-caps;
+            font-size: 2rem;
+            color: var(--gold);
+            border-bottom: 2px solid var(--line);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .world {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .world-title {
+            font-family: Lora, serif;
+            font-variant: small-caps;
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--line-soft);
+            padding-bottom: 0.5rem;
+        }
+
+        .session {
+            background: var(--panel-2);
+            border: 1px solid var(--line-soft);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .session:last-child { margin-bottom: 0; }
+
+        .session-header {
+            font-family: Lora, serif;
+            font-variant: small-caps;
+            font-size: 1.1rem;
+            color: var(--gold-soft);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .session-header .chevron {
+            font-size: 0.75rem;
+            transition: transform 0.2s;
+        }
+
+        .session-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .char-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 0.75rem;
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: border-color 0.15s, background 0.15s;
+        }
+
+        .char-link:hover {
+            border-color: var(--gold);
+            background: var(--panel);
+        }
+
+        .char-link .icon {
+            font-size: 1.1rem;
+            opacity: 0.6;
+        }
+
+        .char-name {
+            text-transform: capitalize;
+        }
+
+        .empty-state {
+            color: var(--muted);
+            font-style: italic;
+            font-size: 0.9rem;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ARCANEO — Character Sheets</h1>
+
+        <div class="world">
+            <div class="world-title">Sword Coast Adventures</div>
+
+            <div class="session">
+                <div class="session-header">
+                    <span class="chevron">&#9656;</span> Session 9
+                </div>
+                <div class="session-grid">
+                    <a class="char-link" href="sword-coast-adventures/session-9/fenn-manosdebruma-arcaneo-character-sheet.html">
+                        <span class="icon">🗡️</span>
+                        <span class="char-name">Fenn Manosdebruma</span>
+                    </a>
+                    <a class="char-link" href="sword-coast-adventures/session-9/krostyx-arcaneo-character-sheet.html">
+                        <span class="icon">☀️</span>
+                        <span class="char-name">Krostyx</span>
+                    </a>
+                    <a class="char-link" href="sword-coast-adventures/session-9/lysander-arcaneo-character-sheet.html">
+                        <span class="icon">🛡️</span>
+                        <span class="char-name">Lysander</span>
+                    </a>
+                    <a class="char-link" href="sword-coast-adventures/session-9/nil-dryggon-drygg-arcaneo-character-sheet.html">
+                        <span class="icon">🔮</span>
+                        <span class="char-name">Nil Dryggon "Drygg"</span>
+                    </a>
+                    <a class="char-link" href="sword-coast-adventures/session-9/renzo-kuroda-arcaneo-character-sheet.html">
+                        <span class="icon">👊</span>
+                        <span class="char-name">Renzo Kuroda</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
